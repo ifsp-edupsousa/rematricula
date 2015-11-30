@@ -1,5 +1,5 @@
 var request = require('supertest'),
-	app = require('../../api/app.js'),
+	app = require('../../api/config/express'),
 	expect = require('chai').expect;
 	
 describe('#login', function() {
