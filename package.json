@@ -1,0 +1,15 @@
+{
+  "name": "rematricula",
+  "version": "1.0.0",
+  "description": "Sistema para Rematricula de Alunos do IFSP Campus Caraguatatuba",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@10.20.1.234:cti/rematricula.git"
+  },
+  "author": "Eduardo P de Sousa <edupsousa@ifsp.edu.br>",
+  "license": "ISC"
+}
