@@ -11,5 +11,16 @@
     "url": "git@10.20.1.234:cti/rematricula.git"
   },
   "author": "Eduardo P de Sousa <edupsousa@ifsp.edu.br>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "gulp": "^3.9.0",
+    "gulp-mocha": "^2.2.0",
+    "mocha": "^2.3.4",
+    "sinon": "^1.17.2",
+    "supertest": "^1.1.0"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  }
 }
