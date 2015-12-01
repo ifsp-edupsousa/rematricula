@@ -1,14 +1,16 @@
-var passport = require('passport');
-var localStrategy = require('./strategies/local')
-
-passport.use('local-login', localStrategy);
-
-passport.serializeUser(function(user, done) {
-  	done(null, user.id);
-});
-
-passport.deserializeUser(function(id, done) {
-  	done(null, {id: id});
-});
-
-module.exports = passport;
+module.exports = function(envConfig) {
+	var passport = require('passport');
+	var ldapStrategy = require('./strategies/ldap')(envConfig.ldapAuthServer);
+	
+	passport.use('ldap-login', ldapStrategy);
+	
+	passport.serializeUser(function(user, done) {
+		done(null, user.uid);
+	});
+	
+	passport.deserializeUser(function(id, done) {
+		done(null, {id: id});
+	});
+	
+	return passport;
+};

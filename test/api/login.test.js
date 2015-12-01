@@ -1,5 +1,5 @@
 var request = require('supertest'),
-	app = require('../../api/config/express'),
+	app = require('../../api/app'),
 	expect = require('chai').expect;
 	
 describe('#login', function() {
@@ -21,8 +21,8 @@ describe('#login', function() {
 			request(app)
 				.post('/login')
 				.send({
-					usuario: 'admin',
-					senha: '123mudar'
+					usuario: 'aluno',
+					senha: 'aluno'
 				})
 				.expect(302)
 				.expect(function(res) {

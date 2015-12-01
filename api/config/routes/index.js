@@ -3,7 +3,7 @@ module.exports = function(app, passport) {
 		res.end('');
 	});
 	
-	app.post('/login', passport.authenticate('local-login', {
+	app.post('/login', passport.authenticate('ldap-login', {
 		successRedirect: '/',
 		failureRedirect: '/login'
 	}));
