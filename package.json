@@ -14,11 +14,11 @@
   "license": "ISC",
   "devDependencies": {
     "chai": "^3.4.1",
-    "gulp": "^3.9.0",
-    "gulp-mocha": "^2.2.0",
-    "mocha": "^2.3.4",
+    "gulp": "^4.0.2",
+    "gulp-mocha": "^8.0.0",
+    "mocha": "^10.0.0",
     "sinon": "^1.17.2",
-    "supertest": "^1.1.0"
+    "supertest": "^6.2.4"
   },
   "dependencies": {
     "body-parser": "^1.14.1",
@@ -28,6 +28,6 @@
     "gulp-env": "^0.2.0",
     "method-override": "^2.3.5",
     "morgan": "^1.6.1",
-    "passport": "^0.3.2"
+    "passport": "^0.6.0"
   }
 }
